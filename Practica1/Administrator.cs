@@ -8,11 +8,32 @@ public class Administrator : User //clase hija
 {
     public List<Client> clients = new List<Client>();
     public List<ATM> atms = new List<ATM>();
-    ATM atm; 
-
-    public Administrator(int id, string password) : base(id, password) { }
-  
+     
     
+    
+    ATM atm; 
+    
+
+    
+    public Administrator(int id, string password) : base(id, password) { }
+
+    public void addatm()
+    {
+        ATM atm = new ATM(10, 1500000);
+        atms.Add(atm);
+        ATM atm1 = new ATM(20, 2500000);
+        atms.Add(atm1);
+        ATM atm2 = new ATM(30, 3500000);
+        atms.Add(atm2);
+        ATM atm3 = new ATM(40, 4500000);
+        atms.Add(atm3);
+        ATM atm4 = new ATM(50, 5500000);
+        atms.Add(atm4);
+        ATM atm5 = new ATM(60, 500000);
+        atms.Add(atm5);
+
+
+    }
     public void add_client(int id, string password, string type_client) //CREAR CLIENTE
     {
      

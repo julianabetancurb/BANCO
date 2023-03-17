@@ -22,10 +22,11 @@ public class ManejoCliente
         if (respuesta == "1") 
         {
             Console.WriteLine("Elija el atm desde el que desea retirar (ingrese num atm)");
-            foreach (var at in administrator.atms)
+            foreach (ATM at in administrator.atms)
             {
                 Console.WriteLine($"{at.Id}, {at.Balance}");
             }
+
             int atmelegido = int.Parse(Console.ReadLine());
             validar.validar_atm(atmelegido);
 

@@ -16,10 +16,11 @@ public class UdemBank
         return balance_banco;
     }
     public UdemBank() { }
-    public string menu()
+    public void menu()
     {
+        Console.WriteLine("hola");
         bool salir = false;
-        while (salir)
+        while (salir == false)
         {
             try
             {

@@ -17,10 +17,7 @@ public class ATM
         this.Balance = balance;
 
     }
-    public int getId() 
-    {
-        return this.Id;
-    }
+    public int getId() { return this.Id; }
     public int check_Balance()
     {
         return Balance;
