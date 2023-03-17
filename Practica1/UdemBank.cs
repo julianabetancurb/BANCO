@@ -16,7 +16,7 @@ public class UdemBank
         return balance_banco;
     }
     public UdemBank() { }
-    public void menu()
+    public string menu()
     {
         bool salir = false;
         while (salir)
@@ -64,77 +64,7 @@ public class UdemBank
         }
     }
 }
-             /* public void menu() 
-        {
-            bool salir = false;
-            while (salir)
-            {
-                try
-                {
-                    Console.WriteLine("\n Bienvenidos al banco UdeM");
-                    Console.WriteLine("Por favor ingrese su funcion:");
-                    Console.WriteLine("1. Cliente");
-                    Console.WriteLine("2. Administrador");
-                    Console.WriteLine("3. Salir");
-                    int opcion = Convert.ToInt32(Console.ReadLine());
-
-                    switch (opcion)
-                    {
-                        case 1:
-                            Console.WriteLine("\n Hola. Ingresa la opcion que deseas: ");
-                            Console.WriteLine("1. Entrar");
-                            Console.WriteLine("2. Quiero crear una cuenta");
-                            int opcionCliente = Convert.ToInt32(Console.ReadLine());
-                            if (opcionCliente == 1) 
-                            {
-                                Console.WriteLine(" Bienvenido señor(a) //Nombre del txt");
-                                Console.WriteLine("Ingrese la opcion que desea: ");
-                                Console.WriteLine("1. Retirar dinero desde un ATM");
-                                Console.WriteLine("2. Retirar dinero via sucursal virtual");
-                                Console.WriteLine("3. Depositar dinero desde un ATM");
-                                Console.WriteLine("4. Depositar dinero vía sucursal virtual");
-                                Console.WriteLine("5. Transferir dinero a otro cliente");
-                                int opcionEntrar =  Convert.ToInt32(Console.ReadLine());
-                                if(opcionEntrar == 1) 
-                                {
-                                    Console.WriteLine("Retirar dinero atm");
-                                }
-                                if (opcionEntrar == 2) 
-                                {
-                                    Console.WriteLine("Retirar dinero via sucursal");
-                                }
-                                if(opcionEntrar == 3) 
-                                {
-                                    Console.WriteLine("Depositar dinero");
-                                }
-                                if (opcionEntrar == 4) 
-                                {
-                                    Console.WriteLine("Depositar dinero via sucursal virtual");
-                                }
-                                if ( opcionEntrar == 5) 
-                                {
-                                    Console.WriteLine("Tranferir dinero");
-                                }
-                            }
-                            else if (opcionCliente == 2) 
-                            {
-                                Console.WriteLine("\n Gracias por querer crear una cuenta con nosotros");
-                                Console.WriteLine("");
-                            }
-                            break;
-                    }
-
-                }
-                catch (Exception)
-                {
-
-                }
-            }
-
-
-        }
-             */
-              
+        
     
         
      
