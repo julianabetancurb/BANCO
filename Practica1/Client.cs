@@ -13,14 +13,14 @@ public class Client : User //clase hija
     public Client(int id, string password, string type_client) : base(id, password) //hereda contructor
     {
 
-        this.Balance = 0;
+        this.Balance = 100000;
         this.type_client = type_client;
         
         this.Account_number = GetAccountNumber();
     }
     public string getTypeClient
     {
-        get { return type_client; }
+         return type_client; 
     }
     public string GetAccountNumber()
     {
