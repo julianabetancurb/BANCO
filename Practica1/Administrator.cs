@@ -8,9 +8,11 @@ public class Administrator : User //clase hija
 {
     public List<Client> clients = new List<Client>();
     public List<ATM> atms = new List<ATM>();
+    ATM atm; 
 
     public Administrator(int id, string password) : base(id, password) { }
-
+  
+    
     public void add_client(int id, string password, string type_client) //CREAR CLIENTE
     {
      

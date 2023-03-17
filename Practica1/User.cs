@@ -22,9 +22,9 @@ public class User //clase padre
     {
         this.Id=newId;  
     }
-    public string getPassword
+    public string getPassword()
     {
-        get { return this.Password; }
+        return this.Password; 
     }
     public void setPassword(string newPassword)
     {

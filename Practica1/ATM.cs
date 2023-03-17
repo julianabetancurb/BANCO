@@ -17,20 +17,29 @@ public class ATM
         this.Balance = balance;
 
     }
+    public int getId() 
+    {
+        return this.Id;
+    }
     public int check_Balance()
     {
         return Balance;
     }
 
-    public int upgrade_balance(int new_balance, int amount)
+    public int upgrade_balance_atm( int amount)
     {
-        this.Balance = new_balance;
+        int new_balance = Balance - amount;
 
-        if (new_balance != 0)
-        {
-            new_balance += Balance + amount;
-        }
         return new_balance;
     }
-    
+    public int uptade_balance_atm(int amount)
+    {
+        int new_balance = Balance + amount;
+
+        return new_balance;
+    }
+    public override string ToString()
+    {
+        return "[" + "Num cajero: " + Id + " Balance cajero: " + Balance + "]";
+    }
 }
